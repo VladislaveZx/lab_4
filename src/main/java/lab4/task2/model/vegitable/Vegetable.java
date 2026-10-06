@@ -1,4 +1,4 @@
-package task2.model.vegitable;
+package lab4.task2.model.vegitable;
 
 public abstract class Vegetable {
     private String name;

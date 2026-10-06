@@ -1,4 +1,4 @@
-package task1.model;
+package lab4.task1.model;
 
 
 import java.util.Arrays;

@@ -1,6 +1,6 @@
-package task1.service;
+package lab4.task1.service;
 
-import task1.model.Plane;
+import lab4.task1.model.Plane;
 
 public class PlaneService {
     public static void main(String[] args) {

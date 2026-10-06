@@ -1,6 +1,6 @@
-package task2.model.salad;
+package lab4.task2.model.salad;
 
-import task2.model.vegitable.Vegetable;
+import lab4.task2.model.vegitable.Vegetable;
 
 import java.util.Arrays;
 

@@ -1,7 +1,7 @@
-package task2.service;
+package lab4.task2.service;
 
-import task2.model.salad.Salad;
-import task2.model.vegitable.Vegetable;
+import lab4.task2.model.salad.Salad;
+import lab4.task2.model.vegitable.Vegetable;
 
 public class ChefService {
     public void makeSalad(Salad salad) {

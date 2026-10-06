@@ -1,9 +1,9 @@
-package task2;
+package lab4.task2;
 
-import task2.model.salad.Salad;
-import task2.model.vegitable.FruitVegetable;
-import task2.model.vegitable.RootVegetable;
-import task2.service.ChefService;
+import lab4.task2.model.salad.Salad;
+import lab4.task2.model.vegitable.FruitVegetable;
+import lab4.task2.model.vegitable.RootVegetable;
+import lab4.task2.service.ChefService;
 
 import java.util.Scanner;
 
