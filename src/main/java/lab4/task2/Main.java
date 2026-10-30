@@ -13,6 +13,11 @@ public class Main {
     private static int saladCount = 0; // Счетчик текущего количества салатов
 
     public static void main(String[] args) {
+
+        System.out.println(
+                System.getProperty("java.util.logging.config.file")
+        );
+
         ChefService chef = new ChefService();
         Scanner scanner = new Scanner(System.in);
         boolean isRunning = true;

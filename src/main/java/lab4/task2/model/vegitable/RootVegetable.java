@@ -1,8 +1,21 @@
 package lab4.task2.model.vegitable;
 
-public class RootVegetable extends  Vegetable {
+import java.util.logging.Logger;
+
+public class RootVegetable extends Vegetable {
+
+    private static final Logger logger = Logger.getLogger(RootVegetable.class.getName());
 
     private boolean requiresPrepare;
+
+    public RootVegetable(String name, double weight,
+                         double caloriesPer100g, boolean requiresPrepare) {
+        super(name, weight, caloriesPer100g);
+        this.requiresPrepare = requiresPrepare;
+
+        logger.info("Создан корнеплод: " + name);
+        logger.fine("Требуется очистка: " + requiresPrepare);
+    }
 
     public boolean isRequiresPrepare() {
         return requiresPrepare;
@@ -10,20 +23,19 @@ public class RootVegetable extends  Vegetable {
 
     public void setRequiresPrepare(boolean requiresPrepare) {
         this.requiresPrepare = requiresPrepare;
+        logger.fine("Изменен параметр подготовки корнеплода '" + getName() + "'");
     }
 
     @Override
     public void prepare() {
+        logger.info("Начата подготовка корнеплода: " + getName());
+
         if (requiresPrepare) {
             System.out.println("Корнеплод: Моем, очищаем от кожуры и натираем -> " + getName());
-        }
-        else {
+        } else {
             System.out.println("Корнеплод: Тщательно моем и нарезаем -> " + getName());
         }
 
-    }
-    public RootVegetable(String name, double weight, double caloriesPer100g, boolean requiresPrepare) {
-        super(name, weight, caloriesPer100g);
-        this.requiresPrepare = requiresPrepare;
+        logger.fine("Подготовка корнеплода завершена: " + getName());
     }
 }
